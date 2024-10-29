@@ -1,0 +1,9 @@
+apiVersion: olm.operatorframework.io/v1alpha1
+kind: ClusterCatalog
+metadata:
+  name: mycatalog
+spec:
+  source:
+    type: Image
+    image:
+      ref: quay.io/lgallett/s3-catalog:latest

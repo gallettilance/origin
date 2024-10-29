@@ -1,0 +1,13 @@
+apiVersion: olm.operatorframework.io/v1alpha1
+kind: ClusterExtension
+metadata:
+  name: ack-s3-controller.v1.0.3
+spec:
+  source:
+    sourceType: Catalog
+    catalog:
+      packageName: ack-s3-controller
+  install:
+    namespace: default
+    serviceAccount:
+      name: ack-s3-controller-installer
